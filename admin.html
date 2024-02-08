@@ -20,250 +20,288 @@
                 </ul>
               </div>
         </nav>
-        <article class="col-md-12">
-            <form>
+        <article class="col-md-12 row">
+            <form class="col-md-5 col-sm-12 m-auto">
+                <div class="mb-3 mt-3">
+                    <label for="polo_cim" class="form-label">Cím</label>
+                    <input type="text" name="polo_cim" id="polo_cim" class="form-control">
+                </div>
 
+                <div class="mb-3 mt-3">
+                    <label for="polo_kep" class="form-label">Kép</label>
+                    <input type="file" name="polo_kep" id="polo_kep" class="form-control">
+                </div>
+
+                <div class="mb-3 mt-3">
+                    <label for="polo_meret" class="form-label">Méret</label>
+                    <select class="form-select" id="polo_meret">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                      </select>
+                </div>
+                
+                  <div class="mb-3 mt-3">
+                      <label for="polo_leiras" class="form-label">Leírás</label>
+                      <textarea class="form-control" rows="3" id="polo_leiras" name="polo_leiras"></textarea>
+                  </div>
+
+                <div class="mb-3 mt-3">
+                    <label for="polo_ar" class="form-label">Ár (Ft)</label>
+                    <input type="number" min="1" id="polo_ar" class="form-control">
+                </div>
+
+                <div class="mb-3 mt-3">
+                    <label for="polo_keszlet" class="form-label">Készlet (db)</label>
+                    <input type="number" min="0" id="polo_keszlet" class="form-control">
+                </div>
+
+                <input type="submit" value="Feltöltés" class="btn btn-secondary mb-5">
             </form>
-            <table class="table table-hover table-bordered table-responsive">
-                <thead>
-                <tr>
-                    <th>id</th>
-                    <th>cím</th>
-                    <th>kép</th>
-                    <th>méret</th>
-                    <th>leírás</th>
-                    <th>ár (ft)</th>
-                    <th>készlet (db)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>001</td>
-                    <td>Retro Gamer</td>
-                    <td><img src="kepek/polo1.jpg" alt="retro gamer polo" width="50px"></td>
-                    <td>S</td>
-                    <td>A pólódat kifordítva 30 fokon, szárítógép használata nélkül mosd ki, így vigyázva a 100% pamut szövet és a nyomat minőségére. ...</td>
-                    <td>6900</td>
-                    <td>36</td>
-                </tr>
-                <tr>
-                    <td>001</td>
-                    <td>Retro Gamer</td>
-                    <td><img src="kepek/polo1.jpg" alt="retro gamer polo" width="50px"></td>
-                    <td>M</td>
-                    <td>Ez azért fontos, mert a magas hőfokú, száraz környezetben a centrifugális erő mellett megsérülne a minta.</td>
-                    <td>6900</td>
-                    <td>44</td>
-                </tr>
-                <tr>
-                    <td>001</td>
-                    <td>Retro Gamer</td>
-                    <td><img src="kepek/polo1.jpg" alt="retro gamer polo" width="50px"></td>
-                    <td>L</td>
-                    <td>A pólódat kifordítva 30 fokon, szárítógép használata nélkül mosd ki, így vigyázva a 100% pamut szövet és a nyomat minőségére. ...</td>
-                    <td>6900</td>
-                    <td>66</td>
-                </tr>
-                <tr>
-                    <td>001</td>
-                    <td>Retro Gamer</td>
-                    <td><img src="kepek/polo1.jpg" alt="retro gamer polo" width="50px"></td>
-                    <td>XL</td>
-                    <td>A pólódat kifordítva 30 fokon, szárítógép használata nélkül mosd ki, így vigyázva a 100% pamut szövet és a nyomat minőségére. ...</td>
-                    <td>6900</td>
-                    <td>22</td>
-                </tr>
-                <tr>
-                    <td>001</td>
-                    <td>Retro Gamer</td>
-                    <td><img src="kepek/polo1.jpg" alt="retro gamer polo" width="50px"></td>
-                    <td>XXL</td>
-                    <td>A pólódat kifordítva 30 fokon, szárítógép használata nélkül mosd ki, így vigyázva a 100% pamut szövet és a nyomat minőségére. ...</td>
-                    <td>6900</td>
-                    <td>85</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><img src="kepek/polo2.jpg" alt="retro gamer polo" width="50px"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><img src="kepek/polo2.jpg" alt="retro gamer polo" width="50px"></td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><img src="kepek/polo2.jpg" alt="retro gamer polo" width="50px"></td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><img src="kepek/polo2.jpg" alt="retro gamer polo" width="50px"></td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><img src="kepek/polo2.jpg" alt="retro gamer polo" width="50px"></td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><img src="kepek/polo3.jpg" alt="retro gamer polo" width="50px"></td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><img src="kepek/polo3.jpg" alt="retro gamer polo" width="50px"></td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><img src="kepek/polo3.jpg" alt="retro gamer polo" width="50px"></td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><img src="kepek/polo3.jpg" alt="retro gamer polo" width="50px"></td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><img src="kepek/polo3.jpg" alt="retro gamer polo" width="50px"></td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><img src="kepek/polo4.jpg" alt="retro gamer polo" width="50px"></td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><img src="kepek/polo4.jpg" alt="retro gamer polo" width="50px"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><img src="kepek/polo4.jpg" alt="retro gamer polo" width="50px"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><img src="kepek/polo4.jpg" alt="retro gamer polo" width="50px"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><img src="kepek/polo4.jpg" alt="retro gamer polo" width="50px"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><img src="kepek/polo5.jpg" alt="retro gamer polo" width="50px"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><img src="kepek/polo5.jpg" alt="retro gamer polo" width="50px"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><img src="kepek/polo5.jpg" alt="retro gamer polo" width="50px"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><img src="kepek/polo5.jpg" alt="retro gamer polo" width="50px"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><img src="kepek/polo5.jpg" alt="retro gamer polo" width="50px"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-            </table>
+            <div class="table-responsive">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>cím</th>
+                        <th>kép</th>
+                        <th>méret</th>
+                        <th>leírás</th>
+                        <th>ár (ft)</th>
+                        <th>készlet (db)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Retro Gamer</td>
+                        <td><img src="kepek/polo1.jpg" alt="retro gamer polo" width="50px"></td>
+                        <td>S</td>
+                        <td>A pólódat kifordítva 30 fokon, szárítógép használata nélkül mosd ki, így vigyázva a 100% pamut szövet és a nyomat minőségére. ...</td>
+                        <td>6900</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Retro Gamer</td>
+                        <td><img src="kepek/polo1.jpg" alt="retro gamer polo" width="50px"></td>
+                        <td>M</td>
+                        <td>Ez azért fontos, mert a magas hőfokú, száraz környezetben a centrifugális erő mellett megsérülne a minta.</td>
+                        <td>6900</td>
+                        <td>44</td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Retro Gamer</td>
+                        <td><img src="kepek/polo1.jpg" alt="retro gamer polo" width="50px"></td>
+                        <td>L</td>
+                        <td>A pólódat kifordítva 30 fokon, szárítógép használata nélkül mosd ki, így vigyázva a 100% pamut szövet és a nyomat minőségére. ...</td>
+                        <td>6900</td>
+                        <td>66</td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Retro Gamer</td>
+                        <td><img src="kepek/polo1.jpg" alt="retro gamer polo" width="50px"></td>
+                        <td>XL</td>
+                        <td>A pólódat kifordítva 30 fokon, szárítógép használata nélkül mosd ki, így vigyázva a 100% pamut szövet és a nyomat minőségére. ...</td>
+                        <td>6900</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Retro Gamer</td>
+                        <td><img src="kepek/polo1.jpg" alt="retro gamer polo" width="50px"></td>
+                        <td>XXL</td>
+                        <td>A pólódat kifordítva 30 fokon, szárítógép használata nélkül mosd ki, így vigyázva a 100% pamut szövet és a nyomat minőségére. ...</td>
+                        <td>6900</td>
+                        <td>85</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><img src="kepek/polo2.jpg" alt="retro gamer polo" width="50px"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><img src="kepek/polo2.jpg" alt="retro gamer polo" width="50px"></td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><img src="kepek/polo2.jpg" alt="retro gamer polo" width="50px"></td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><img src="kepek/polo2.jpg" alt="retro gamer polo" width="50px"></td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><img src="kepek/polo2.jpg" alt="retro gamer polo" width="50px"></td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><img src="kepek/polo3.jpg" alt="retro gamer polo" width="50px"></td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><img src="kepek/polo3.jpg" alt="retro gamer polo" width="50px"></td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><img src="kepek/polo3.jpg" alt="retro gamer polo" width="50px"></td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><img src="kepek/polo3.jpg" alt="retro gamer polo" width="50px"></td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><img src="kepek/polo3.jpg" alt="retro gamer polo" width="50px"></td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><img src="kepek/polo4.jpg" alt="retro gamer polo" width="50px"></td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><img src="kepek/polo4.jpg" alt="retro gamer polo" width="50px"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><img src="kepek/polo4.jpg" alt="retro gamer polo" width="50px"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><img src="kepek/polo4.jpg" alt="retro gamer polo" width="50px"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><img src="kepek/polo4.jpg" alt="retro gamer polo" width="50px"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><img src="kepek/polo5.jpg" alt="retro gamer polo" width="50px"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><img src="kepek/polo5.jpg" alt="retro gamer polo" width="50px"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><img src="kepek/polo5.jpg" alt="retro gamer polo" width="50px"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><img src="kepek/polo5.jpg" alt="retro gamer polo" width="50px"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><img src="kepek/polo5.jpg" alt="retro gamer polo" width="50px"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
         </article>
         <footer class="col-md-12">
             <p>Erdős Viktória</p>
